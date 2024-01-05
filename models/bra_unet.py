@@ -1,7 +1,7 @@
 import copy
 import torch
 import torch.nn as nn
-from bra_unet_system import BRAUnetSystem
+from .bra_unet_system import BRAUnetSystem
 from timm.models import register_model
 
 

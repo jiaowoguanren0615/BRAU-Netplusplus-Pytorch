@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from einops import rearrange
 from timm.models.layers import DropPath
-from bra import BiLevelRoutingAttention
+from .bra import BiLevelRoutingAttention
 
 
 class DWConv(nn.Module):

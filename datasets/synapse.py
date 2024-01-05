@@ -31,9 +31,10 @@ def augment_seg(img_aug, img, seg ):
     seg = mask_to_onehot(seg)
     aug_det = img_aug.to_deterministic()
     image_aug = aug_det.augment_image(img)
-    segmap = ia.SegmentationMapOnImage(seg , nb_classes=np.max(seg)+1 , shape=img.shape )
-    segmap_aug = aug_det.augment_segmentation_maps( segmap )
-    segmap_aug = segmap_aug.get_arr_int()
+    segmap = ia.SegmentationMapsOnImage(seg, nb_classes=np.max(seg)+1, shape=img.shape )
+    segmap_aug = aug_det.augment_segmentation_maps(segmap)
+    # segmap_aug = segmap_aug.get_arr_int()
+    segmap_aug = segmap_aug.get_arr()
     segmap_aug = np.argmax(segmap_aug, axis=-1).astype(np.float32)
     return image_aug , segmap_aug
 

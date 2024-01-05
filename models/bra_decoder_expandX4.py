@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.utils.checkpoint as checkpoint
 from einops import rearrange
-from bra_block import Block
+from .bra_block import Block
 
 
 
@@ -53,7 +53,7 @@ class FinalPatchExpand_X4(nn.Module):
         x = self.norm(x)
         return x
 
-    
+
 class BasicLayer_up(nn.Module):
     """ A basic Swin Transformer layer for one stage.
 

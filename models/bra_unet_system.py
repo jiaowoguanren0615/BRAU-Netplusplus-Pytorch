@@ -2,10 +2,10 @@ import math
 import torch
 import torch.nn as nn
 from timm.models.layers import trunc_normal_
-from bra_block import Block
+from .bra_block import Block
 from einops import rearrange
 from fairscale.nn.checkpoint import checkpoint_wrapper
-from bra_decoder_expandX4 import BasicLayer_up
+from .bra_decoder_expandX4 import BasicLayer_up
 
 
 class SCCSA(nn.Module):
@@ -109,7 +109,9 @@ class BRAUnetSystem(nn.Module):
                  mlp_ratios=[4, 4, 4, 4],
                  param_attention='qkvo',
                  final_upsample = "expand_first",
-                 mlp_dwconv=False):
+                 mlp_dwconv=False,
+                 **kwargs):
+
         super().__init__()
         self.num_classes = num_classes
         self.num_features = embed_dim[0]  # num_features for consistency with other models

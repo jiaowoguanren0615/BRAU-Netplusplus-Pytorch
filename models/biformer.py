@@ -13,8 +13,8 @@ import torch
 import torch.nn as nn
 from einops import rearrange
 from timm.models.layers import DropPath
-from bra import BiLevelRoutingAttention
-from common import Attention, AttentionLePE, DWConv
+from .bra import BiLevelRoutingAttention
+from .common import Attention, AttentionLePE, DWConv
 
 
 class Block(nn.Module):
