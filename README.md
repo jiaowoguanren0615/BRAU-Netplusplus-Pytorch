@@ -6,10 +6,10 @@ This is a warehouse for BRAU-Net++ models based pytorch framework, can be used t
 The code mainly comes from official [source code](https://github.com/caipengzhou/brau-netplusplus).
 
 ## Preparation
-### [Download datasets](https://pan.baidu.com/s/1LLyIlP3sjuoFAwTBaYflRQ?pwd=0615) Password: 0615. 
+### 1.[Download datasets](https://pan.baidu.com/s/1LLyIlP3sjuoFAwTBaYflRQ?pwd=0615) Password: 0615
 The contents of this datasets-directory include: COCO, PascalVOC, Cityscapes, ADE20K, Synapse, ...etc.
-### [Download pretrained-weights](https://drive.google.com/file/d/115-vkjCapans_Mx3EXLxZsxr_WSbpXxm/view?usp=sharing)
 
+### 2.[Download pretrained-weights](https://drive.google.com/file/d/115-vkjCapans_Mx3EXLxZsxr_WSbpXxm/view?usp=sharing)
 
 ## Project Structure
 ```
