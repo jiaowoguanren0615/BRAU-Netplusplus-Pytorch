@@ -14,17 +14,9 @@ The contents of this datasets-directory include: COCO, PascalVOC, Cityscapes, AD
 ## Project Structure
 ```
 ├── datasets: Load datasets
-    ├── cityscapes.py: Customize reading cityscapes dataset
-    ├── coco.py: Customize reading COCO dataset
-    ├── custom_transforms.py: Customize your image-data aug approaches
-    ├── mypath.py: Customize your data path
     ├── synapse.py: Customize reading synapse dataset
-    ├── utils.py: Build some encode-decode-map or colors functions
-    ├── voc.py: Customize reading PascalVOC dataset
 ├── models: BRAU-Net++ Model
-    ├── block.py: Build the necessary branches of the model
-    ├── build_model.py: Construct "BRAU-Net++" model
-    ├── configs.py: model config parameters
+    ├── bra_unet.py: Construct "BRAU-Net++" model
 ├── utils:
     ├── augmentations.py: Define transforms data enhancement methods
     ├── distributed_utils.py: Record various indicator information and output and distributed environment
