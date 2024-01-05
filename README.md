@@ -12,6 +12,8 @@ The contents of this datasets-directory include: COCO, PascalVOC, Cityscapes, AD
 ### 2.[Download pretrained-weights](https://drive.google.com/file/d/115-vkjCapans_Mx3EXLxZsxr_WSbpXxm/view?usp=sharing)
 
 ## Project Structure
+### For the reading and processing of COCO, PascalVOC and CityScapse datasets, please refer to my code for this [repository](https://github.com/jiaowoguanren0615/SegNext-Pytorch/tree/main/SegNext/datasets)
+
 ```
 ├── datasets: Load datasets
     ├── synapse.py: Customize reading synapse dataset
